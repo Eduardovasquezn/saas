@@ -1,0 +1,10 @@
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "./Dockerfile"
+#This triggers a build if any of these files changes
+watchPatterns = [
+    "requirements.txt",
+    "src/**",
+    "railway.toml",
+    "Dockerfile",
+]
